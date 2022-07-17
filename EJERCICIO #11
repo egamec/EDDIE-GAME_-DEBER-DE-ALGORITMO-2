@@ -1,0 +1,20 @@
+Algoritmo secuencia_mayor
+	definir num,M,cont,sec Como Entero
+	Escribir "ingrese el numero de la secuencia"
+	leer sec
+	cont=1
+	M=1
+	Mientras cont<=sec Hacer
+		Escribir " ingrese un numero"
+		leer num
+		Si cont=1 Entonces
+			M=num
+		SiNo
+			Si num>M Entonces
+				M=num
+			Fin Si
+		Fin Si
+		cont=cont+1
+	Fin Mientras
+	Escribir "el numero mayor es :",M	
+FinAlgoritmo
