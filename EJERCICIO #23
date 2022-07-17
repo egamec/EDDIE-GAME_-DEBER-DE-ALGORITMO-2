@@ -1,0 +1,18 @@
+Algoritmo secuencia_mayorpares
+	Definir num,nm Como Real
+	Escribir "ingrese el numero de la secuencia"
+	Leer sec; Escribir "  "
+	may=0; p=1 ; c=1
+	Mientras c<=sec Hacer
+		Escribir "Ingresa un numero"," ",p
+		Leer num
+		p=p+1
+		Si num%2=0 Entonces
+			Si may<=num Entonces
+				may=num
+			FinSi
+		FinSi
+		c=c+1
+	Fin Mientras
+	Escribir "   ";Escribir "Numero mayor es"," ",may
+FinAlgoritmo
