@@ -1,0 +1,19 @@
+Algoritmo  secuencia_factorial
+	Dimension num[20];
+	Dimension b[20];
+	x<-0;
+	w<-1;p=1
+	Para x<-1 hasta 20 Hacer
+		w<-1
+		Escribir "ingres el numero del vector a[",x,"]:";
+		Leer num[x];Escribir "      "
+		Para r<-1 hasta num[x] Con Paso 1 Hacer
+			w<-w*r
+			b[x]<-w
+		FinPara
+	FinPara
+	Para x<-1 hasta 20 Hacer
+		Escribir "";Escribir "--> el factoria del vector"," ",p," ","es"," ", "[",b[x],"]"
+		p=p+1
+	FinPara 
+FinAlgoritmo
