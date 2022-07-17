@@ -1,0 +1,13 @@
+Algoritmo Numpar
+	Escribir "Ingrese un numero"
+	leer num
+	cont=1
+	Mientras num >= 0 & cont=1 Hacer
+		Si  (num MOD 2=0) Entonces
+			Escribir numero,'El numero ingresado es Par'
+		SiNo
+			Escribir numero,'El numero ingresado no es par'
+		FinSi
+		cont=cont+1
+	Fin Mientras
+FinAlgoritmo
