@@ -1,0 +1,29 @@
+Algoritmo suma_mayor
+	Dimension vector[20];
+	p=1
+	Para a<-1 hasta 20 Hacer
+		Escribir "ingrese el numero  ",p
+		Leer vector[a]
+		p=p+1
+		
+	FinPara
+	suma<-0;  may<-0
+	Para a<-1 hasta 20 Hacer
+		
+		Si vector[a] mod 2=0 Entonces
+			
+			suma<-suma+vector[a];
+			
+		Sino
+			
+			Si vector[a]>may Entonces
+				
+				may<-vector[a];
+				
+			FinSi
+			
+		FinSi
+		
+	FinPara
+	Escribir  "El  numero mayor de los impares es: ", may," La suma de los numeros pares es:",suma;
+FinAlgoritmo
