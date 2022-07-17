@@ -1,0 +1,81 @@
+Algoritmo transformar_vector
+	Definir num como numerico
+	Definir tr Como caracter
+	Escribir sin saltar "Ingrese un n�mero: "
+	Leer num
+	Escribir " "
+	Escribir sin saltar "Ingrese una de las siguientes car�cteres, B para mostrar el n�mero en valor binario, O para mostrarlo en valor Octal o H para mostrarlo en valor hexadecimal:"
+	Leer op 
+	Escribir " "
+	si tr = "B" o op = "b" entonces
+		transformador = 1
+	FinSi
+	
+	si tr = "O" o op = "o" entonces
+		transformador = 2
+	FinSi
+	
+	si tr = "H" o op = "h" entonces
+		transformador = 3
+	FinSi
+	
+	
+	Segun transformador Hacer
+		1:
+			Definir residuo, posicion Como Entero
+			posicion = 0
+			Dimension base2[999]
+			Mientras num > 0 Hacer
+				residuo = num mod 2
+				num = trunc(num/2)
+				posicion = posicion + 1
+				base2[posicion] = residuo
+			FinMientras
+			
+			Escribir "El n�mero ingresado en base binaria es de: "
+			
+			Para posicion=posicion Hasta 1 Hacer
+				Escribir base2[posicion] Sin Saltar
+			Fin Para
+			Escribir " "
+			
+		2:
+			Definir residuo, posicion Como Entero
+			posicion = 0
+			Dimension base8[999]
+			Mientras num > 0 Hacer
+				residuo = num mod 8
+				num = trunc(num/8)
+				posicion = posicion + 1
+				base8[posicion] = residuo
+			FinMientras
+			
+			Escribir "El n�mero ingresado en base octal es de: "
+			
+			Para posicion=posicion Hasta 1 Hacer
+				Escribir sin saltar base8[posicion]
+			Fin Para
+			Escribir " "
+		3:
+			Definir residuo, posicion Como Entero
+			posicion = 0
+			Dimension base16[999]
+			Mientras num > 0 Hacer
+				residuo = num mod 16
+				num = trunc(num/16)
+				posicion = posicion + 1
+				base16[posicion] = residuo
+			FinMientras
+			
+			Escribir "El n�mero ingresado en base hexadecimal es de: "
+			
+			Para posicion=posicion Hasta 1 Hacer
+				Escribir sin saltar base16[posicion]
+			Fin Para
+			Escribir " "
+			
+		De Otro Modo:
+			Escribir "Ingrese un car�cter correcto."
+	Fin Segun
+	
+FinAlgoritmo
