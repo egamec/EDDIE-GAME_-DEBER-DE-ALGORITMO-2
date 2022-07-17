@@ -1,0 +1,14 @@
+Algoritmo media
+	definir num,m,sec,res Como Real
+	cont=1
+	Escribir "ingrese el numero de la secuencia"
+	leer sec
+	Mientras cont<=sec Hacer
+		escribir"ingrese un numero"
+		Leer num
+		m=m+num
+		res=m/sec
+		cont=cont+1
+	Fin Mientras
+	Escribir "la media de los numeros es:",res
+FinAlgoritmo
