@@ -1,0 +1,23 @@
+Algoritmo secuencia
+	DEFINIR num,may,men COMO ENTERO
+	inicio = 0
+	may = 0; men = 9999999
+	MIENTRAS inicio = 0 Hacer
+		ESCRIBIR "Introduce un n�mero"
+		LEER num
+		SI num%2=0 ENTONCES
+			SI (num > may) ENTONCES
+				may = num
+			FINSI
+			SI (num < men) ENTONCES
+				men =num
+			FINSI
+			
+		SiNo
+			Escribir "[se ingreso un numero impar, el proceso finaliza]";Escribir "   "
+			inicio = 1
+		FinSi
+	FinMientras
+	Escribir "en la secuencia el numero MAYOR es: ",may
+	Escribir "en la secuencia el numero MENOR es: ",men
+FinAlgoritmo
