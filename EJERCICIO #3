@@ -1,0 +1,16 @@
+Algoritmo mayor_numero
+	definir n1,n2,contador Como Entero
+	Escribir "ingrese primer numero"
+	Leer n1
+	Escribir "ingrese segundo numero"
+	Leer n2
+	contador=1
+	Mientras contador=1  Hacer
+		Si n1>n2 Entonces
+			Escribir " EL MAYOR DE LOS DOS NUMEROS ES:"," ",n1
+		SiNo
+			Escribir " EL MAYOR DE LOS DOS NUMEROS ES:"," ",n2
+		Fin Si
+		contador=contador+1
+	Fin Mientras
+FinAlgoritmo
