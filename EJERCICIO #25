@@ -1,0 +1,16 @@
+Algoritmo mayor_posicion
+	secuencia=20 
+	Dimension num[secuencia]
+	Para a<-1 Hasta secuencia Con Paso 1 Hacer
+		Escribir "Ingrese un numero para la posici�n ",a 
+		Leer num[a]
+	FinPara
+	may= 0; pos = 0
+	Para a<-1 Hasta secuencia Con Paso 1 Hacer
+		SI num[a]>may Entonces
+			may= num[a]
+			pos = a
+		FinSi
+	FinPara
+	Escribir "el numero mayor se encuentra en la posicion","[",pos,"]"
+FinAlgoritmo
