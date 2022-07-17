@@ -1,0 +1,17 @@
+Algoritmo secuencia_par
+	definir num,sec,suma Como Entero
+	cont=1 ;sec=30;v=1;suma=0
+	Mientras cont<=sec Hacer
+		Escribir "ingrese numero",v
+		Leer num
+		Si num % 2=0 Entonces
+			suma=suma+num
+			cont=cont+1
+			v=v+1
+		SiNo
+			cont=cont+1
+			v=v+1
+		Fin Si
+	Fin Mientras
+	Escribir " " ; Escribir "--->LA SUMA DE LOS PARES ES :","[",suma,"]"
+FinAlgoritmo
