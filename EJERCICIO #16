@@ -1,0 +1,14 @@
+Algoritmo suma_par
+	definir num,cont,suma,sec Como Entero
+	Escribir "INGRESE LA SECUENCIA DESEADA";leer sec
+	cont=1
+	Mientras cont<=sec Hacer
+		Escribir " {INGRESE UN NUMERO}";leer num
+		Si num %2=0 Entonces
+			suma=suma+num ; cont=cont+1
+		SiNo
+			cont=cont+1
+		Fin Si
+	Fin Mientras
+	Escribir "la suma de los numeros pares es:","[",suma,"]"
+FinAlgoritmo
