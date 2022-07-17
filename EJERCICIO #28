@@ -1,0 +1,21 @@
+Algoritmo secuencia_orden
+	Escribir "ingrese un numero de secuencia"
+	Leer sec 
+	Dimension vector[sec];
+	Para a<-1 hasta sec Hacer
+		Escribir "Introduzca vector[",a,"]:";
+		Leer vector[a];
+	FinPara
+	Para a<-1 hasta sec Hacer
+		Para b<-1 hasta sec Hacer
+			si vector[a]<vector[b] Entonces
+				ayu<-vector[a];
+				vector[a]<-vector[b];
+				vector[b]<-ayu;
+			FinSi
+		FinPara
+	FinPara
+	Para a<-1 hasta sec Hacer
+		Escribir vector[a];
+	FinPara
+FinAlgoritmo
