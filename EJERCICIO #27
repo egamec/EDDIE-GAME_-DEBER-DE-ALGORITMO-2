@@ -1,0 +1,20 @@
+Algoritmo mayor_vector
+	Dimension a[15]
+	Dimension b[15]	
+	Dimension c[15]
+	may<-0; i<-0
+	Escribir "Deber� introducir 30 valores";Escribir "   "
+	Para i<-1 hasta 15 Hacer	
+		Escribir "Introduzca un numero para a[",i,"]:"
+		Leer a[i]	
+		Escribir "Introduzcaun numero para b[",i,"]:"	
+		Leer b[i];Escribir "  "	
+		c[i]<-a[i]+b[i]	
+	FinPara
+	Para i<-1 hasta 3 Hacer	
+		Si c[i] > may Entonces	
+			may<-c[i]	
+		FinSi	
+	FinPara
+	Escribir "El mayor del vector C es:" ; Escribir may 
+FinAlgoritmo
