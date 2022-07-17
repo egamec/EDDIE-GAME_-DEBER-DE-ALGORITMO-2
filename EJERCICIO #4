@@ -1,0 +1,24 @@
+Algoritmo mayor_tres
+	definir n1,n2,n3,c Como Entero
+	Escribir "ingrese primer numero"
+	Leer n1
+	Escribir "ingrese segundo numero"
+	Leer n2
+	Escribir "ingrese tercer numero"
+	Leer n3
+	c=1
+	Mientras c=1  Hacer
+		Si n1>n2 y n1>n3 Entonces
+			Escribir "el numero mayor es:",n1
+		SiNo
+			Si n2>n1 y n2>n3 Entonces
+				Escribir "el numero mayor es:",n2
+			SiNo
+				Si n3>n1 y n3>n2 Entonces
+					Escribir "el numero mayor es:",n3
+				Fin Si
+			Fin Si
+		Fin Si
+	c=c+1
+	Fin Mientras
+FinAlgoritmo
