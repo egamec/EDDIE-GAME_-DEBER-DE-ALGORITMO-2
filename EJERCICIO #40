@@ -1,0 +1,26 @@
+Algoritmo encontar_frase
+	Definir sec Como entero
+	Escribir "INGRESE EL NUMERO DE LA SECUENCIA"
+	Leer n
+	Dimension a[n]
+	f<-0;
+	Escribir "Deber� introducir 5 frases"
+	Para f<-1 hasta n Hacer	
+		Escribir "Introduzca la frase: [",f,"]:"
+		Leer a[f]	
+	FinPara
+	Escribir "-----------------------------------------------"
+	Escribir "Escriba la frase a buscar:"
+	Leer frase
+	existe <- 0
+	Para f<-1 hasta n Hacer	
+		SI a[f] = frase Entonces
+			existe <- f
+		FinSi
+	FinPara
+	SI existe <> 0 Entonces
+		Escribir "Se encontro la frase en la posicion: ",existe
+	SiNo
+		Escribir "la frase ingresada no se encuentra"
+	FinSi
+FinAlgoritmo
