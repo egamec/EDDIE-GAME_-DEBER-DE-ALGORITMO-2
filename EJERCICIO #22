@@ -1,0 +1,24 @@
+Algoritmo sumpares_produc5
+	Escribir "Identifica el mayor de los pares";
+	Definir num,nm Como Real;
+	Definir i Como Entero;
+	sum=0
+	pro=1
+	Escribir "ingrese el numero de la secuencia deseada"
+	Leer sec;Escribir "  " 
+	nm<-0;  x=1  ;  c=1
+	Mientras c<=sec Hacer
+		Escribir "Ingresa el numero"," ",x
+		Leer num
+		x=x+1
+		Si num%2=0 Entonces
+			sum=sum+num
+		FinSi
+		si num%5=0 Entonces
+			pro=pro*num
+		FinSi
+		c=c+1
+	Fin Mientras
+	Escribir "La suma de los pares es = ",sum
+	Escribir "El producto de la suma de los multiplos de 5 es = ",pro
+FinAlgoritmo
