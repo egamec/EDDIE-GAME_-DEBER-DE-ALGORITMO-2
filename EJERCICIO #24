@@ -1,0 +1,28 @@
+Algoritmo mayor5_menor3
+	DEFINIR sec,indice,num,may, men COMO ENTERO;
+	indice<-0; 
+	num<-0;may<-0;men<-0;p=1
+	Escribir "ingrese el numero de secuencia"
+	leer sec
+	MIENTRAS (indice <sec) HACER
+		indice<-indice+1;
+		ESCRIBIR "Introduzca NUMERO",p
+		LEER num
+		p=p+1
+		SI (num%5=0) ENTONCES 
+			SI (num>may) ENTONCES 
+				may<-num 
+			FINSI
+		FINSI
+		
+		SI (num%3=0) ENTONCES 
+			SI (men = 0) Entonces
+				men = num
+			FinSi
+			SI (num<men) ENTONCES 
+			FINSI 
+		FINSI 
+	FINMIENTRAS
+	ESCRIBIR "el numero mayor de multiplo de 5 es:",may
+	ESCRIBIR "el numero menor multiplo de 3 es:",men
+FinAlgoritmo
