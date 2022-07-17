@@ -1,0 +1,21 @@
+Algoritmo secuencia_encontrar
+	Definir a, num, bus,sec, vector Como Entero 
+	Escribir "ingresar un numero de secuencia"
+	leer sec;        Escribir "  "
+	Dimension vector[sec]
+	para a = 1 Hasta sec Con Paso 1 Hacer
+		vector(a) = a
+	FinPara
+	Escribir "Ingresa un numero que deseas buscar"
+	leer num;      Escribir "  "
+	bus = 0
+	para a = 1 Hasta sec Con Paso 1 Hacer
+		si num == vector(a) Entonces
+			Escribir "El numero se encuentra en la posici�n ",a
+			bus = 1
+		FinSi
+	FinPara
+	si bus == 0 Entonces
+		Escribir "El numero ingresado no se encuentra en el vector"
+	FinSi
+FinAlgoritmo		
