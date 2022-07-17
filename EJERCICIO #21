@@ -1,0 +1,25 @@
+Algoritmo sumafactorial
+	definir num,c, lim Como Entero
+	Definir fun Como Real
+	Escribir "ingrese el numero de secuencia"
+	Leer sec
+	Para i<-1 Hasta sec Hacer
+		ac=0
+		Escribir "Ingrese un numero para la posici�n ",i 
+		Leer num
+		Si num > 0 Entonces
+			c=1
+			fun=1
+			Mientras c <= num Hacer
+				fun=fun*c
+				c=c+1
+			Fin Mientras
+			//Escribir "La funcion factorial del numero ingresado"," ",n," ","es: ",funcionf
+		SiNo
+			Escribir "El numero ingresado no es calculable"
+		Fin Si
+		a=a+fun
+	FinPara
+	Escribir " "
+	Escribir "La suma de los factoriales de los numeros ingresados es: ", a
+FinAlgoritmo
