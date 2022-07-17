@@ -1,0 +1,21 @@
+Algoritmo sec_numprimos
+	cant<-30; 
+	Dimension num[cant]
+	Para i<-1 Hasta cant Con Paso 1 Hacer
+		Escribir "Ingrese el numero"," ",i 
+		Leer num[i]
+	FinPara
+	suma <- 0
+	Para i<-1 hasta cant Hacer
+		c<-0;
+		Para j<-1 Hasta num[i] Hacer
+			si num[i]%j = 0 Entonces
+				c<-c+1
+			FinSi
+		FinPara
+		Si c = 2 Entonces
+			suma <- suma + num[i]
+		FinSi
+	FinPara
+	Escribir "La suma de los numeros primos es: ",suma;
+FinAlgoritmo
