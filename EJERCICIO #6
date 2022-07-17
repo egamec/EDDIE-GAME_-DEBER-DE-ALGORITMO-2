@@ -1,0 +1,21 @@
+Algoritmo suma_producto
+	definir num,suma,producto,sec,c,a1 Como real
+	c=1
+	a=0
+	a1=1
+	sec=30
+	x=1
+	Mientras c<=sec Hacer
+		Escribir " ingrese numero"," ",x
+		Leer num
+		c=c+1
+		x=x+1
+		a=a+num
+		a1=num*a1
+	Fin Mientras
+	suma=a
+	producto=a1
+	Escribir"la suma es:",suma
+	Escribir "el producto es :",producto
+	
+FinAlgoritmo
