@@ -1,0 +1,14 @@
+ALGORITMO secuencia_f
+	DEFINIR num,producto  COMO ENTERO;
+	DEFINIR ffin COMO CARACTER;
+	DEFINIR limite COMO CARACTER;
+	Limite <- "f"; Producto <- 1
+	REPETIR 
+		ESCRIBIR"Introduce el número"
+		LEER numer;
+		ESCRIBIR "¿Seguir? f = no s = si\n"
+		LEER ffin;
+		producto <- producto * numer
+	HASTA QUE (ffin = limite)
+	ESCRIBIR"el producto de los números es: ", producto
+FINALGORITMO
